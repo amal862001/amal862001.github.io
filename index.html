@@ -1,371 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Section</title>
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amal A P | Data Scientist</title>
+    <!-- Modern CSS Framework - Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #007bff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+        }
 
-<style>
-  .about-section {
-    text-align: center;
-    padding: 50px 0;
-  }
-  .about-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  .about-section img {
-    width: 200px; /* Adjust the size as needed */
-    height: 200px;
-    border-radius: 50%; /* Makes the image round */
-    margin-bottom: 20px;
-  }
-  .about-section p {
-    color: #333;
-  }
+        .skill-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
 
-  /* Additional CSS for Projects Section */
-.projects-section h2 {
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-}
-.card {
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
-}
-.card-img-top {
-  max-height: 180px; /* Adjust this value to fit the image properly in the card */
-  object-fit: cover; /* This makes sure the image covers the area properly */
-}
-.card-body {
-  padding: 15px;
-}
-.card-title {
-  font-size: 1.25rem;
-}
-.card-text {
-  margin-bottom: 15px;
-}
-
-/* Additional CSS for Skills Section */
-.skills-section h2 {
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-}
-.skills-section .card {
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.skills-section .card-img-top {
-  padding: 20px; /* Add padding around your images if needed */
-  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
-  height: 180px; /* Fixed height for consistency */
-  object-fit: contain; /* This will make sure the image is scaled properly within the container */
-}
-.skills-section .card-body {
-  padding: 15px;
-}
-.skills-section .card-title {
-  font-size: 1.25rem;
-  margin-bottom: 15px;
-}
-.skills-section .btn-outline-primary {
-  color: #007bff;
-  border-color: #007bff;
-}
-.skills-section .btn-outline-primary:hover {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-/* Additional CSS for Contact Section */
-.contact-section {
-  padding: 50px 0;
-}
-.contact-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-.contact-section p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-.social-icon {
-  width: 50px; /* Size of your icons */
-  margin-bottom: 10px;
-}
-/* Hover effect for icons */
-.social-icon:hover {
-  opacity: 0.7;
-}
-/* Style for links in the Contact section */
-.contact-section a {
-  color: #fff;
-  text-decoration: none; /* Removes underline from links */
-  display: inline-block; /* Allows for margin on the bottom */
-  margin-bottom: 10px;
-}
-.contact-section a:hover {
-  color: #ddd; /* Color when hovering over the link */
-}
-
-/* CSS for Sticky Navbar */
-.navbar {
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
-}
-
-/* Ensure padding is added to body to avoid content being hidden behind the navbar */
-body { 
-  padding-top: 56px; /* Adjust this value based on the height of your navbar */
-}
-
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Style for navigation bar links */
-.navbar-nav .nav-link {
-  color: white;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #f8f9fa; /* Slightly lighter white when hovering over links */
-}
-
-/* Media query for responsive navbar collapsing */
-@media (max-width: 992px) {
-  .navbar-collapse {
-    background-color: #343a40; /* Same as navbar color for seamless look */
-  }
-}
-
-
-</style>
-
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm border-b border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Name -->
+                <a href="#" class="text-xl font-bold gradient-text">Amal A P</a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a>
+                    <a href="#projects" class="text-gray-300 hover:text-white transition-colors">Projects</a>
+                    <a href="#skills" class="text-gray-300 hover:text-white transition-colors">Skills</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+                </div>
 
-<section id='about' class="about-section">
-  <div class="container">
-    <h2>About</h2>
-    <img src="images/about/1.jpg" alt="About Me">
-    <p>Welcome to my portfolio! I'm Amal A P, an aspiring data scientist passionate about leveraging data to drive actionable insights and solve complex problems.I am excited to embark on a journey where data science meets real-world challenges.</p>
-    <p>As you explore my portfolio, you'll find a collection of my data science projects and analyses, showcasing my ability to extract actionable insights from data. From predictive modeling to exploratory data analysis, each project reflects my passion for turning data into actionable intelligence.Thank you for visiting my portfolio. I invite you to explore my projects and experiences, and I'm excited to connect with fellow data enthusiasts, collaborators, and mentors. Let's harness the power of data to make a meaningful impact together!</p>
-  </div>
-</section>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-300 hover:text-white focus:outline-none" id="mobile-menu-button">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
 
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#about" class="block px-3 py-2 text-gray-300 hover:text-white transition-colors">About</a>
+                    <a href="#projects" class="block px-3 py-2 text-gray-300 hover:text-white transition-colors">Projects</a>
+                    <a href="#skills" class="block px-3 py-2 text-gray-300 hover:text-white transition-colors">Skills</a>
+                    <a href="#contact" class="block px-3 py-2 text-gray-300 hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<!-- Projects Section -->
-<section id="projects" class="projects-section bg-light" id="projects">
-  <div class="container">
-    <h2 class="text-center">Projects</h2>
-    <div class="row">
-      <!-- Project 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-            <p class="card-text">Machine learning model for extensive heart disease prediction based on comprehensive medical attributes.</p>
-            <a href="https://www.kaggle.com/code/amalap862001/end-to-end-heart-disease-classification-project" class="btn btn-secondary">Source Code</a>
-          </div>
+    <!-- Hero Section with Particle.js Background -->
+    <div id="particles-js" class="relative h-screen pt-16">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="z-10 text-center max-w-4xl px-4" data-aos="fade-up">
+                <h1 class="text-7xl font-bold gradient-text mb-6 tracking-tight">Amal A P</h1>
+                <p class="text-3xl text-gray-300 mb-8">Data Scientist | Machine Learning Engineer </p>
+                <div class="flex gap-6 justify-center">
+                    <a href="#about" class="px-8 py-4 bg-blue-600 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center gap-2">
+                        Explore My Work
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition-all transform hover:scale-105">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Project 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
-            <p class="card-text"> Advanced deep learning model for precise identification of diverse dog breeds through innovative transfer learning techniques.</p>
-            <a href="https://www.kaggle.com/code/amalap862001/dog-vision-project-breed-identification" class="btn btn-secondary">Source Code</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
-          <div class="card-body">
-            <h5 class="card-title">Project 3</h5>
-            <p class="card-text">Machine learning model to predict the subject category of a given question using Natural Language Processing (NLP) techniques.</p>
-            <a href="https://github.com/amal862001/machine-learning-projects/blob/683a805fff4d701fe7d204617ecf0e19bd8f11e0/Prediction_of_subject_based_on_question(NLP)/Prediction_of_subject_based_on_question(NLP).ipynb" class="btn btn-secondary">Source Code</a>
-          </div>
-        </div>
-      </div>
-       <!-- Project 4 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="images/projects/4.jpg" class="card-img-top" alt="Project 4">
-          <div class="card-body">
-            <h5 class="card-title">Project 4</h5>
-            <p class="card-text">Real-Time Intrusion Detection and Alert System using OpenCV</p>
-            <a href="https://github.com/amal862001/OpenCV-projects/tree/09cfd3ca8526b9e53aaca82e0e686bc47c9e56d3/Real-Time%20Intrusion%20Detection%20and%20Alert%20System" class="btn btn-secondary">Source Code</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 5 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="images/projects/5.jpg" class="card-img-top" alt="Project 5">
-          <div class="card-body">
-            <h5 class="card-title">Project 5</h5>
-            <p class="card-text">Bulldozer Sale Price Predictor: A machine learning model for accurately forecasting bulldozer sale prices.</p>
-            <a href="https://www.kaggle.com/code/amalap862001/end-to-end-bulldozer-price-regression-project" class="btn btn-secondary">Source Code</a>
-          </div>
-        </div>
-      </div>
     </div>
 
-  </div>
-</section>
-
-
-<!-- Skills Section -->
-<section id="skills" class="skills-section bg-white" id="skills">
-  <div class="container">
-    <h2 class="text-center">Skills</h2>
-    <div class="row">
-      <!-- Skill 1 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/1.png" class="card-img-top" alt="Python">
-          <div class="card-body">
-            <h5 class="card-title">Python</h5>
-            <p class="card-text">Proficient in Python programming with a solid understanding of fundamental concepts.Effectively utilizing control flow,loops,functions and data structures.</p>
-            <a href="https://courses.cognitiveclass.ai/certificates/75c31e37db784d428936dd27d8706cd7" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <img src="images/about/1.jpg" alt="About Me" class="rounded-full w-64 h-64 mx-auto object-cover border-4 border-blue-500">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h2 class="text-4xl font-bold mb-6 gradient-text">About Me</h2>
+                    <p class="text-gray-300 mb-4">Welcome to my portfolio! I'm Amal A P, an aspiring data scientist passionate about leveraging data to drive actionable insights and solve complex problems. I am excited to embark on a journey where data science meets real-world challenges.</p>
+                    <p class="text-gray-300">From predictive modeling to exploratory data analysis, each project reflects my passion for turning data into actionable intelligence. Let's harness the power of data to make a meaningful impact together!</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Skill 2 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
-          <div class="card-body">
-            <h5 class="card-title">Data Visualization</h5>
-            <p class="card-text">Skilled in data visualization techniques using Python libraries such as Matplotlib and Seaborn, capable of creating insightful visual representations of complex datasets.</p>
-            <a href="https://www.udemy.com/certificate/UC-c6479585-d5ab-442c-bf0c-ed5c95f21d81/" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
-        </div>
-      </div>
-      <!-- Skill 3 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/3.png" class="card-img-top" alt="SQL">
-          <div class="card-body">
-            <h5 class="card-title">SQL</h5>
-            <p class="card-text">Proficient in MySQL database management system, adept at designing and optimizing database schemas, writing complex queries, and implementing data manipulation tasks.</p>
-            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
-        </div>
-      </div>
-      <!-- Skill 4 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
-          <div class="card-body">
-            <h5 class="card-title">Machine Learning</h5>
-            <p class="card-text">Proficient in machine learning techniques using Scikit-learn, with expertise in model development,evaluation. Continuously learning and exploring advanced algorithms for solving real-world problems.</p>
-            <a href="https://www.udemy.com/certificate/UC-c6479585-d5ab-442c-bf0c-ed5c95f21d81/" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
-        </div>
-      </div>
-      <!-- Skill 5 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/5.png" class="card-img-top" alt="Data Storytelling">
-          <div class="card-body">
-            <h5 class="card-title">Exploratory Data Analysis</h5>
-            <p class="card-text">Proficient in exploratory data analysis with Pandas and NumPy, adept at cleaning, manipulating datasets to extract actionable insights. Continuously refining techniques to uncover hidden patterns in data.</p>
-            <a href="https://www.udemy.com/certificate/UC-c6479585-d5ab-442c-bf0c-ed5c95f21d81/" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
-        </div>
-      </div>
-      <!-- Skill 6 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/6.png" class="card-img-top" alt="Natural Language Processing">
-          <div class="card-body">
-            <h5 class="card-title">Natural Language Processing (NLP)</h5>
-            <p class="card-text">Proficient in Natural Language Processing (NLP), skilled in text preprocessing, feature extraction, and implementing advanced machine learning algorithms to analyze and derive insights from textual data.</p>
-            <a href="https://www.udemy.com/certificate/UC-c6479585-d5ab-442c-bf0c-ed5c95f21d81/" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Contact Me Section -->
-<section id="contact" class="contact-section text-center text-white bg-dark">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <div class="row">
-      <div class="col-lg-6">
-        <p><i class="fas fa-envelope"></i> <a href="mailto:amalapsenior@gmail.com" class="text-white">amalapsenior@gmail.com</a></p>
-      </div>
-      <div class="col-lg-6">
-        <p><i class="fas fa-phone"></i> <a href="tel:7012041653" class="text-white">7012041653</a></p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-2 offset-lg-2 col-md-4 mb-4">
-        <a href="https://linkedin.com/in/amal-a-p" target="_blank">
-          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
-          LinkedIn
-        </a>
-      </div>
-      <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://www.kaggle.com/amalap862001" target="_blank">
-          <img src="icons/kaggle.png" alt="Kaggle" class="social-icon">
-          Kaggle
-        </a>
-      </div>
-      <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://github.com/amal862001" target="_blank">
-          <img src="icons/github.png" alt="GitHub" class="social-icon">
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Projects Section with 3D Cards -->
+    <section id="projects" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dog Breed Classifier -->
+                <div class="card-hover rounded-lg overflow-hidden bg-gray-800" data-aos="flip-left">
+                    <img src="images/projects/2.jpg" alt="Dog Breed Classifier" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Dog Breed Classifier</h3>
+                        <p class="text-gray-400 mb-4">Advanced deep learning model for precise identification of diverse dog breeds using transfer learning.</p>
+                        <a href="https://www.kaggle.com/code/amalap862001/dog-vision-project-breed-identification" class="inline-block px-6 py-2 bg-blue-600 rounded-full hover:bg-blue-700 transition">View on Kaggle</a>
+                    </div>
+                </div>
 
-<!-- Sticky Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#home">Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <!-- Subject Category Prediction -->
+                <div class="card-hover rounded-lg overflow-hidden bg-gray-800" data-aos="flip-left">
+                    <img src="images/projects/3.jpg" alt="Subject Category Prediction" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Subject Category Prediction (NLP)</h3>
+                        <p class="text-gray-400 mb-4">Machine learning model to predict the subject category of a given question using NLP techniques.</p>
+                        <a href="https://github.com/amal862001/machine-learning-projects/blob/683a805fff4d701fe7d204617ecf0e19bd8f11e0/Prediction_of_subject_based_on_question(NLP)/Prediction_of_subject_based_on_question(NLP).ipynb" class="inline-block px-6 py-2 bg-blue-600 rounded-full hover:bg-blue-700 transition">View on GitHub</a>
+                    </div>
+                </div>
 
+                <!-- Cold Email Generator -->
+                <div class="card-hover rounded-lg overflow-hidden bg-gray-800" data-aos="flip-left">
+                    <img src="images/projects/6.png" alt="Cold Email Generator" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Cold Email Generator</h3>
+                        <p class="text-gray-400 mb-4">AI-powered application that generates personalized cold emails using LLama 3 for effective outreach.</p>
+                        <a href="https://github.com/amal862001/Gen-AI/tree/main/Cold_Email_Generator" class="inline-block px-6 py-2 bg-blue-600 rounded-full hover:bg-blue-700 transition">View on GitHub</a>
+                    </div>
+                </div>
 
-<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                <!-- Meal Planner App -->
+                <div class="card-hover rounded-lg overflow-hidden bg-gray-800" data-aos="flip-left">
+                    <img src="images/projects/7.jpg" alt="Meal Planner App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Meal Planner App</h3>
+                        <p class="text-gray-400 mb-4">Smart meal planning application that generates personalized meal plans based on dietary preferences and nutritional goals.</p>
+                        <a href="https://github.com/amal862001/Gen-AI/tree/main/Meal_Planner_App" class="inline-block px-6 py-2 bg-blue-600 rounded-full hover:bg-blue-700 transition">View on GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Real-Time Intrusion Detection -->
+                <div class="card-hover rounded-lg overflow-hidden bg-gray-800" data-aos="flip-left">
+                    <img src="images/projects/4.jpg" alt="Real-Time Intrusion Detection" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Real-Time Intrusion Detection</h3>
+                        <p class="text-gray-400 mb-4">Real-Time Intrusion Detection and Alert System using OpenCV.</p>
+                        <a href="https://github.com/amal862001/OpenCV-projects/tree/09cfd3ca8526b9e53aaca82e0e686bc47c9e56d3/Real-Time%20Intrusion%20Detection%20and%20Alert%20System" class="inline-block px-6 py-2 bg-blue-600 rounded-full hover:bg-blue-700 transition">View on GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Bulldozer Sale Price Predictor -->
+                <div class="card-hover rounded-lg overflow-hidden bg-gray-800" data-aos="flip-left">
+                    <img src="images/projects/5.jpg" alt="Bulldozer Price Predictor" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Bulldozer Sale Price Predictor</h3>
+                        <p class="text-gray-400 mb-4">A machine learning model for accurately forecasting bulldozer sale prices.</p>
+                        <a href="https://www.kaggle.com/code/amalap862001/end-to-end-bulldozer-price-regression-project" class="inline-block px-6 py-2 bg-blue-600 rounded-full hover:bg-blue-700 transition">View on Kaggle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Interactive Elements -->
+    <section id="skills" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Python -->
+                <div class="skill-card p-6 rounded-lg" data-aos="zoom-in">
+                    <img src="images/skills/1.png" alt="Python" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-center mb-3">Python</h3>
+                    <p class="text-gray-400 text-center">Proficient in Python programming and core concepts</p>
+                    <a href="https://courses.cognitiveclass.ai/certificates/75c31e37db784d428936dd27d8706cd7" class="mt-4 block text-center text-blue-400 hover:text-blue-300">View Certification</a>
+                </div>
+
+                <!-- Data Visualization -->
+                <div class="skill-card p-6 rounded-lg" data-aos="zoom-in">
+                    <img src="images/skills/2.png" alt="Data Visualization" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-center mb-3">Data Visualization</h3>
+                    <p class="text-gray-400 text-center">Experienced with Matplotlib and Seaborn</p>
+                    <a href="https://www.udemy.com/certificate/UC-c6479585-d5ab-442c-bf0c-ed5c95f21d81/" class="mt-4 block text-center text-blue-400 hover:text-blue-300">View Certification</a>
+                </div>
+
+                <!-- SQL -->
+                <div class="skill-card p-6 rounded-lg" data-aos="zoom-in">
+                    <img src="images/skills/3.png" alt="SQL" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-center mb-3">SQL</h3>
+                    <p class="text-gray-400 text-center">Experienced with MySQL database management and query writing</p>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="skill-card p-6 rounded-lg" data-aos="zoom-in">
+                    <img src="images/skills/4.png" alt="Machine Learning" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-center mb-3">Machine Learning</h3>
+                    <p class="text-gray-400 text-center">Skilled in Scikit-learn, TensorFlow, model development, and evaluation</p>
+                    <a href="https://www.udemy.com/certificate/UC-c6479585-d5ab-442c-bf0c-ed5c95f21d81/" class="mt-4 block text-center text-blue-400 hover:text-blue-300">View Certification</a>
+                </div>
+
+                <!-- Exploratory Data Analysis -->
+                <div class="skill-card p-6 rounded-lg" data-aos="zoom-in">
+                    <img src="images/skills/5.png" alt="EDA" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-center mb-3">Exploratory Data Analysis</h3>
+                    <p class="text-gray-400 text-center">Proficient in Pandas and NumPy for data exploration</p>
+                    <a href="https://www.udemy.com/certificate/UC-c6479585-d5ab-442c-bf0c-ed5c95f21d81/" class="mt-4 block text-center text-blue-400 hover:text-blue-300">View Certification</a>
+                </div>
+
+                <!-- NLP -->
+                <div class="skill-card p-6 rounded-lg" data-aos="zoom-in">
+                    <img src="images/skills/6.png" alt="NLP" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-center mb-3">Natural Language Processing (NLP)</h3>
+                    <p class="text-gray-400 text-center">Experienced with NLP preprocessing, feature extraction, and ML modeling</p>
+                </div>
+
+                <!-- Power BI -->
+                <div class="skill-card p-6 rounded-lg" data-aos="zoom-in">
+                    <img src="images/skills/7.png" alt="Power BI" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-center mb-3">Power BI</h3>
+                    <p class="text-gray-400 text-center">Proficient in creating interactive dashboards and business intelligence reports</p>
+                </div>
+
+                <!-- Generative AI -->
+                <div class="skill-card p-6 rounded-lg" data-aos="zoom-in">
+                    <img src="images/skills/8.png" alt="Generative AI" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-center mb-3">Generative AI</h3>
+                    <p class="text-gray-400 text-center">Experience with LLMs, prompt engineering, and AI application development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Modern Design -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Let's Connect</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="flex flex-wrap justify-center gap-8">
+                    <a href="https://linkedin.com/in/amal-a-p" class="flex items-center gap-3 bg-gray-800 px-6 py-3 rounded-full hover:bg-gray-700 transition">
+                        <img src="icons/linkedin.png" alt="LinkedIn" class="w-6 h-6">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/amal862001" class="flex items-center gap-3 bg-gray-800 px-6 py-3 rounded-full hover:bg-gray-700 transition">
+                        <img src="icons/github.png" alt="GitHub" class="w-6 h-6">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.kaggle.com/amalap862001" class="flex items-center gap-3 bg-gray-800 px-6 py-3 rounded-full hover:bg-gray-700 transition">
+                        <img src="icons/kaggle.png" alt="Kaggle" class="w-6 h-6">
+                        <span>Kaggle</span>
+                    </a>
+                </div>
+                <div class="mt-12 text-center">
+                    <p class="text-gray-400">Email: <a href="mailto:amalapsenior@gmail.com" class="text-blue-400 hover:text-blue-300">amalapsenior@gmail.com</a></p>
+                    <p class="text-gray-400">Phone: <a href="tel:7012041653" class="text-blue-400 hover:text-blue-300">7012041653</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-800 text-center">
+        <p class="text-gray-400">© 2024 Amal A P. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Initialize Particles.js
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80 },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ffffff",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6
+                }
+            }
+        });
+    </script>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add active state to navigation items based on scroll position
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                const scroll = window.scrollY;
+
+                if (scroll >= sectionTop && scroll < sectionBottom) {
+                    navLinks.forEach(link => {
+                        if (link.getAttribute('href') === '#' + section.getAttribute('id')) {
+                            link.classList.add('text-white');
+                            link.classList.remove('text-gray-300');
+                        } else {
+                            link.classList.remove('text-white');
+                            link.classList.add('text-gray-300');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+
+
